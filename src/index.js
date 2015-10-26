@@ -18,7 +18,7 @@ export default class {
    * @property {String} config.username
    * @property {String} config.password
    */
-  constructor (config) {
+  constructor(config) {
     let connStr;
     this.db = false;
     if (typeof config === 'string') {
@@ -47,7 +47,7 @@ export default class {
    * Ensures connection established or waits for emit
    * @returns {Object} promise
    */
-  checkConn () {
+  checkConn() {
     return new Promise((resolve) => {
       /* istanbul ignore if */
       if (!this.db) {
@@ -66,7 +66,7 @@ export default class {
    * @param {*} ...params Spread of args to command
    * @returns {Object} promise
    */
-  execute (command, ...params) {
+  execute(command, ...params) {
     return new Promise((resolve, reject) => {
       // Ensure (or wait for) connection
       this.checkConn()
@@ -87,8 +87,8 @@ export default class {
         });
     });
   }
-  
-    createCollection (options) {
+
+  createCollection(options) {
     return new Promise((resolve) => {
       // Ensure (or wait for) connection
       this.checkConn()
@@ -97,5 +97,5 @@ export default class {
         });
     });
   }
-  
+
 }
