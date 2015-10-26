@@ -1,0 +1,14 @@
+machine:
+  services:
+    - docker
+  node:
+    version: 0.12
+
+dependencies:
+  override:
+    - npm install -g devlab
+    - lab install
+
+test:
+  override:
+    - lab ci

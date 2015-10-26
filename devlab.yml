@@ -12,3 +12,4 @@ tasks:
   test: npm run test
   lint: npm run lint
   build: npm run build
+  ci: .lint .test .build
