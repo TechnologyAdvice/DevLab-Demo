@@ -2,8 +2,6 @@ from: node:0.12
 services:
   - mongo:3.0:
       name: mongodb
-      expose:
-        - 27017:27017
       persist: false
 tasks:
   env: env
