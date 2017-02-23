@@ -1,5 +1,7 @@
 # DevLab Demo
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/TechnologyAdvice/DevLab-Demo.svg)](https://greenkeeper.io/)
+
 This is a simple demo project for experimenting with [DevLab](https://github.com/TechnologyAdvice/DevLab)
 
 ## More Information
